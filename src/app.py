@@ -6,10 +6,12 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.colors import n_colors
+import os
 
 
 # dataset
-df = pd.read_csv("c:/users/sahil/downloads/Call-Center-Dataset (1).csv")
+file_path = os.path.join(os.path.dirname(__file__), "Call-Center-Dataset (1).csv")
+df = pd.read_csv(file_path)
 
 # changes to dataset
 df['Talk Duration(sec)'] = pd.to_timedelta(df['AvgTalkDuration']).dt.total_seconds()
@@ -19,6 +21,7 @@ df['Date'] = pd.to_datetime(df['Date'])
 
 # plotly app
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], suppress_callback_exceptions=True)
+server = app.server
 
 # layout
 app.layout = dbc.Container([
