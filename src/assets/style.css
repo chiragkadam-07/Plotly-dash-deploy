@@ -1,0 +1,110 @@
+/* dbc container */
+.dbc-cont {
+    border: 1px solid black;
+    background-color: rgba(240, 240, 240, 1);
+}
+
+/* Title text */
+.title {
+    color: rgb(213, 50, 50);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    margin-right: 10px;
+    padding-top: 8px;
+}
+
+/* title-div flex */
+.title-div {
+    display: flex;
+    justify-content: center;
+}
+
+/* title col */
+.title_col {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+/* sub-header h5 */
+.sub-header {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 8px 0 8px 10px;
+}
+
+/* sub-header col */
+.header-col {
+    padding: 0;
+}
+
+/* dateinput div */
+.DateInput {
+    width: 90px;
+}
+ /* dateinput inside div */
+.DateInput_input {
+    font-size: 14px;
+    width: 90px;
+    border: 0;
+}
+
+/* gauge col */
+.gauge_col {
+    padding-left: 12px;
+    padding-right: 0;
+}
+
+/* cards */
+.custom_cards {
+    height: 98px;
+    padding: 0;
+    width: 170px;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(235, 11, 11, 0.1);
+}
+
+/* for dropdown filters */
+.filters {
+    width: 205.33px;
+    box-shadow: 0 4px 8px rgba(235, 11, 11, 0.2);
+}
+
+/* cards */
+.card-body {
+    text-align: center;
+}
+.card-header {
+    text-align: center;
+}
+
+/* filters div flex */
+#container {
+    width: 830px;
+    position: relative;
+    bottom: 45px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* charts margin */
+#line_chart {
+    margin-top: 15px;
+}
+#line_chart2 {
+    margin-top: 15px;
+}
+#pie_chart1 {
+    margin-top: 20px;
+}
+#pie_chart2 {
+    margin-top: 20px;
+}
+#table_chart {
+    margin-top: 15px;
+}
+#calls {
+    width: 90px;
+}
